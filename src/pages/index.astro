@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import InvestorsHero from '../components/Investors.astro';
+import OurBrands from '../components/OurBrands.astro';
+import CTA from '../components/CTA.astro';
+import WhyChooseUsClient from '../components/WhyChooseUsClient.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+---
+
+<Layout title="Everkind Consumers">
+	<main>
+		<Hero />
+		<InvestorsHero />
+		{/*
+<section id="brands" class="...">
+  <OurBrands />
+</section>
+*/}
+		<div class="px-6 sm:px-12 md:px-16 lg:px-24" aria-hidden="true">
+			<div class="max-w-6xl mx-auto h-px bg-(--color-everkind-dark) opacity-20"></div>
+		</div>
+		<WhyChooseUsClient />
+		<div class="px-6 sm:px-12 md:px-16 lg:px-24" aria-hidden="true">
+			<div class="max-w-6xl mx-auto h-px bg-(--color-everkind-dark) opacity-20"></div>
+		</div>
+		<!-- <WhyChooseUs /> -->
+		<CTA />
+	</main>
+</Layout>

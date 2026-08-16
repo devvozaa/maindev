@@ -1,0 +1,282 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us | Everkind Consumers">
+  <main class="bg-(--color-everkind-bg) font-sans text-(--color-everkind-dark) selection:bg-(--color-everkind-green) selection:text-white">
+    
+    <section class="w-full min-h-screen flex flex-col items-center justify-center px-6 py-24 text-center reveal">
+      <h1 class="font-serif text-4xl md:text-6xl leading-[1.15] mb-10 tracking-tighter max-w-5xl">
+        Health isn't something you find in a crisis. <br /> 
+        <span class="italic font-light text-(--color-everkind-green)">It's something you build every single day.</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-(--color-everkind-midgrey) leading-relaxed">
+        <span class="italic font-bold text-xl"> ever·kind<br /></span>
+         <span>Designed around real life stages, families & everything in between</span>
+      </p>
+    </section>
+
+    <!-- <section class="px-6 pb-24 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="reveal bg-white border border-gray-100 rounded-[2.5rem] p-10 flex flex-col justify-between h-150 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-700 group">
+          <div class="flex justify-between items-start">
+            <div class="max-w-55">
+              <h3 class="font-serif text-3xl mb-3 group-hover:text-(--color-everkind-green) transition-colors">Pure <br/> Provenance</h3>
+              <p class="text-xs text-gray-400 leading-relaxed uppercase tracking-wider font-bold">Ethical Sourcing</p>
+            </div>
+            <div class="w-12 h-12 rounded-full border border-(--color-everkind-green) flex items-center justify-center group-hover:bg-(--color-everkind-green) group-hover:text-white transition-all">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-width="2"></path></svg>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden h-72 mt-6 grayscale group-hover:grayscale-0 transition-all duration-700">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" />
+          </div>
+        </div>
+
+        <div class="reveal bg-(--color-everkind-green) rounded-[2.5rem] p-10 flex flex-col justify-between h-150 text-white shadow-xl hover:shadow-2xl transition-all duration-700 group">
+          <div class="rounded-3xl overflow-hidden h-72 mb-6">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+          </div>
+          <div class="flex justify-between items-end">
+            <div class="max-w-55">
+              <h3 class="font-serif text-3xl mb-3 italic">Clean <br/> Innovations</h3>
+              <p class="text-xs opacity-60 leading-relaxed">Pioneering bioactive formulas that respect your biology.</p>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-(--color-everkind-green) hover:scale-110 transition-transform">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-width="2"></path></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal bg-white border border-gray-100 rounded-[2.5rem] p-10 flex flex-col justify-between h-150 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-700 group">
+          <div class="flex justify-between items-start">
+            <div class="max-w-55">
+              <h3 class="font-serif text-3xl mb-3 group-hover:text-(--color-everkind-green) transition-colors">Shared <br/> Rituals</h3>
+              <p class="text-xs text-gray-400 leading-relaxed uppercase tracking-wider font-bold">The Community</p>
+            </div>
+            <div class="w-12 h-12 rounded-full border border-(--color-everkind-green) flex items-center justify-center group-hover:bg-(--color-everkind-green) group-hover:text-white transition-all">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-width="2"></path></svg>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden h-72 mt-6 grayscale group-hover:grayscale-0 transition-all duration-700">
+            <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=800" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ── STATS ── */}
+    <section class="px-6 py-12 reveal" id="stats-section">
+      <div class="max-w-7xl mx-auto bg-(--color-everkind-lightgrey) rounded-[4rem] p-12 md:p-20 overflow-hidden">
+
+        <p class="text-xs uppercase tracking-[0.25em] font-bold text-(--color-everkind-green) mb-12 opacity-70"
+          style="font-family: var(--font-sans);">
+          By the numbers
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3">
+
+          <div class="relative flex flex-col justify-between py-10 md:pr-16 md:border-r border-gray-200">
+            <div class="relative">
+              <span class="count-up block font-serif leading-none select-none pointer-events-none"
+                data-target="98"
+                style="font-size: clamp(7rem, 14vw, 11rem); color: var(--color-everkind-green); opacity: 0.15; line-height: 1;">0</span>
+              <div class="mt-3">
+                <p class="text-2xl md:text-3xl font-serif tracking-tight text-(--color-everkind-dark)">Organic Ingredients</p>
+                <p class="mt-2 text-sm text-(--color-everkind-dark) opacity-50 max-w-[14rem]" style="font-family: var(--font-sans);">
+                  Sourced from nature, never from a lab shortcut.
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 w-10 h-0.5 bg-(--color-everkind-green) opacity-50 rounded-full"></div>
+          </div>
+
+          <div class="relative flex flex-col justify-between py-10 md:px-16 md:border-r border-t md:border-t-0 border-gray-200">
+            <div class="relative">
+              <span class="count-up block font-serif leading-none select-none pointer-events-none"
+                data-target="52"
+                style="font-size: clamp(7rem, 14vw, 11rem); color: var(--color-everkind-green); opacity: 0.15; line-height: 1;">0</span>
+              <div class="mt-3">
+                <p class="text-2xl md:text-3xl font-serif tracking-tight text-(--color-everkind-dark)">Ethical Micro-Farms</p>
+                <p class="mt-2 text-sm text-(--color-everkind-dark) opacity-50 max-w-[14rem]" style="font-family: var(--font-sans);">
+                  Partner farms held to rigorous ethical standards.
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 w-10 h-0.5 bg-(--color-everkind-green) opacity-50 rounded-full"></div>
+          </div>
+
+          <div class="relative flex flex-col justify-between py-10 md:pl-16 border-t md:border-t-0 border-gray-200">
+            <div class="relative">
+              <span class="count-up block font-serif leading-none select-none pointer-events-none"
+                data-target="100"
+                style="font-size: clamp(7rem, 14vw, 11rem); color: var(--color-everkind-green); opacity: 0.15; line-height: 1;">0</span>
+              <div class="mt-3">
+                <p class="text-2xl md:text-3xl font-serif tracking-tight text-(--color-everkind-dark)">Plastic Neutral</p>
+                <p class="mt-2 text-sm text-(--color-everkind-dark) opacity-50 max-w-[14rem]" style="font-family: var(--font-sans);">
+                  Every piece of plastic offset or eliminated entirely.
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 w-10 h-0.5 bg-(--color-everkind-green) opacity-50 rounded-full"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {/* ── TESTIMONIALS ── */}
+    <section class="px-6 py-24 md:py-40 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto text-center mb-20 reveal">
+        <h2 class="font-serif text-5xl md:text-7xl leading-[0.9] mb-6 tracking-tighter">When You Give, You Don't Just <br/> Help You Transform Lives</h2>
+        <p class="text-(--color-everkind-midgrey) text-lg max-w-xl mx-auto">We've gathered answers to help you see exactly how your support makes an impact.</p>
+      </div>
+
+      <div class="relative max-w-full reveal">
+        <div class="carousel-container overflow-x-hidden pb-6">
+          <div class="carousel-track flex gap-10 cursor-grab active:cursor-grabbing pb-4" id="carousel-track">
+            {[
+              { quote: '"Before Everkind came, I used to study under a kerosene lamp. Now, I dream of being an engineer."', name: 'Aisha', country: 'Nigeria', img: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=150' },
+              { quote: '"The community mentorship program gave me the confidence to open my own holistic tailoring shop."', name: 'Kofi', country: 'Ghana', img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=150' },
+              { quote: '"Everkind\'s pure botanical oils have completely restored my skin\'s natural balance. A true meditation in a bottle."', name: 'Elena', country: 'Italy', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150' },
+            ].map((t) => (
+              <div class="carousel-slide shrink-0 w-[80vw] md:w-[500px]">
+                <div class="bg-(--color-everkind-green) text-white rounded-[2.5rem] p-12 md:p-16 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center h-full flex flex-col justify-center">
+                  <blockquote class="font-serif text-2xl md:text-3xl leading-snug mb-12 italic">{t.quote}</blockquote>
+                  <div class="flex flex-col items-center gap-3">
+                    <div class="w-16 h-16 rounded-full border-2 border-white/30 overflow-hidden">
+                      <img src={t.img} class="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <p class="font-bold text-base tracking-tight">{t.name}</p>
+                      <p class="text-[10px] opacity-60 uppercase tracking-widest font-bold">{t.country}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4 mt-10">
+          <button id="prev-btn"
+            class="w-14 h-14 rounded-full border border-gray-200 bg-white flex items-center justify-center transition-all duration-300 hover:bg-(--color-everkind-dark) hover:border-(--color-everkind-dark) hover:text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+            aria-label="Previous">
+            <svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-width="2.5"></path></svg>
+          </button>
+          <button id="next-btn"
+            class="w-14 h-14 rounded-full bg-(--color-everkind-green) text-white flex items-center justify-center transition-all duration-300 hover:bg-(--color-everkind-dark) hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+            aria-label="Next">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-width="2.5"></path></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main> -->
+</Layout>
+
+<style>
+  .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
+  .reveal.active { opacity: 1; transform: translateY(0); }
+
+  .carousel-container {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .carousel-slide {
+    transition: opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1),
+                transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+</style>
+
+<script>
+  // ── REVEAL ──────────────────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── COUNT-UP ─────────────────────────────────────────────────
+  const statsSection = document.getElementById('stats-section')!;
+  let counted = false;
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !counted) {
+        counted = true;
+        document.querySelectorAll<HTMLElement>('.count-up').forEach(counter => {
+          const target = Number(counter.dataset.target ?? 0);
+          let count = 0;
+          const steps = 60;
+          const increment = target / steps;
+          const interval = 1800 / steps;
+          const update = () => {
+            count += increment;
+            if (count < target) {
+              counter.innerText = Math.floor(count).toString();
+              setTimeout(update, interval);
+            } else {
+              counter.innerText = target.toString();
+            }
+          };
+          update();
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  statsObserver.observe(statsSection);
+
+  // ── INFINITE CAROUSEL ────────────────────────────────────────
+  const track = document.getElementById('carousel-track') as HTMLElement;
+  const container = document.querySelector('.carousel-container') as HTMLElement;
+  const originalSlides = Array.from(document.querySelectorAll<HTMLElement>('.carousel-slide'));
+  const totalOriginal = originalSlides.length;
+
+  originalSlides.forEach(slide => {
+    const before = slide.cloneNode(true) as HTMLElement;
+    const after  = slide.cloneNode(true) as HTMLElement;
+    before.setAttribute('aria-hidden', 'true');
+    after.setAttribute('aria-hidden', 'true');
+    track.insertBefore(before, track.firstChild);
+    track.appendChild(after);
+  });
+
+  const allSlides = Array.from(track.querySelectorAll<HTMLElement>('.carousel-slide'));
+  let currentIndex = totalOriginal;
+  let isTransitioning = false;
+
+  function getSlideWidth() { return allSlides[0].offsetWidth + 40; }
+
+  function updateCarousel(animated = true) {
+    const slideW = getSlideWidth();
+    const containerW = container.offsetWidth;
+    const offset = (containerW / 2) - (slideW / 2) - (currentIndex * slideW) + 20;
+    track.style.transition = animated ? 'transform 0.7s cubic-bezier(0.25, 1, 0.5, 1)' : 'none';
+    track.style.transform = `translateX(${offset}px)`;
+    allSlides.forEach((slide, i) => {
+      slide.style.opacity = i === currentIndex ? '1' : '0.4';
+      slide.style.transform = i === currentIndex ? 'scale(1)' : 'scale(0.92)';
+    });
+  }
+
+  track.addEventListener('transitionend', () => {
+    isTransitioning = false;
+    if (currentIndex < totalOriginal) { currentIndex += totalOriginal; updateCarousel(false); }
+    else if (currentIndex >= totalOriginal * 2) { currentIndex -= totalOriginal; updateCarousel(false); }
+  });
+
+  document.getElementById('next-btn')?.addEventListener('click', () => {
+    if (isTransitioning) return;
+    isTransitioning = true; currentIndex++; updateCarousel();
+  });
+  document.getElementById('prev-btn')?.addEventListener('click', () => {
+    if (isTransitioning) return;
+    isTransitioning = true; currentIndex--; updateCarousel();
+  });
+
+  window.addEventListener('load', () => updateCarousel(false));
+  window.addEventListener('resize', () => updateCarousel(false));
+</script>
