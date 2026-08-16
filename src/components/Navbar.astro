@@ -4,7 +4,7 @@ const navLinks = [
  // { name: 'Our Brands', href: '/#brands' },
   { name: 'Opportunities', href: '/opportunities' },
   { name: 'Investors', href: '/investors' },
-  { name: 'Blogs & Press', href: '/blog' }
+  { name: 'Writing', href: '/blog' }
 ];
 import EverkindLogo from '../assets/EverkindLogo.svg';
 ---
@@ -24,7 +24,7 @@ import EverkindLogo from '../assets/EverkindLogo.svg';
     <img 
       src={EverkindLogo.src} 
       alt="Everkind" 
-      class="h-8 w-auto invert"
+      class="navbar-logo h-8 w-auto invert"
     />
   </a>
 
@@ -183,3 +183,17 @@ window.addEventListener('scroll', () => {
     });
   });
 </script>
+
+<style>
+  .navbar-logo {
+    display: block;
+    height: 2rem;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+  }
+
+  @media (min-width: 1024px) {
+    .navbar-logo { height: 2.15rem; max-width: 190px; }
+  }
+</style>
