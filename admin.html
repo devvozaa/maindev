@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f8f8f4">
+  <title>Banshree · Admin demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+  <header class="admin-header">
+    <a class="brand" href="index.html#top" aria-label="Banshree home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 8.5H23.5C31.8 8.5 36 12 36 17.1C36 21.4 33 23.5 29.2 24.4C34.2 25.3 37 28.2 37 32.3C37 37.9 32.7 41 23.6 41H11V8.5Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M7.5 16.5C4.5 16.5 4 21.5 7.5 21.5C11 21.5 10 26 7 26C3 26 3.5 31 7.5 31" stroke="#D99249" stroke-width="2.1" stroke-linecap="round"/></svg></span>
+      <span class="brand-copy"><strong>Banshree</strong><span>Old Clothes Buyer · Mumbai</span></span>
+    </a>
+    <div class="admin-header-actions">
+      <span class="demo-pill" data-admin-i18n="demoTag">DEMO · backend login नहीं</span>
+      <label class="language-wrap" for="admin-language"><span class="sr-only" data-admin-i18n="languageLabel">भाषा</span><select id="admin-language" aria-label="भाषा"><option value="hi">हिन्दी</option><option value="mr">मराठी</option><option value="gu">ગુજરાતી</option><option value="bn">বাংলা</option><option value="en">English</option></select></label>
+    </div>
+  </header>
+  <main class="admin-main">
+    <a class="back-link" href="index.html#pickup-request"><span aria-hidden="true">←</span> <span data-admin-i18n="back">Request form पर लौटें</span></a>
+    <section class="admin-intro" aria-labelledby="admin-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-admin-i18n="eyebrow">Pickup requests · admin view</span></p>
+      <h1 id="admin-title" data-admin-i18n="title">Pickup requests</h1>
+      <p class="admin-description" data-admin-i18n="intro">इस same browser tab से भेजे गए demo requests यहाँ दिखते हैं।</p>
+    </section>
+    <aside class="admin-privacy" role="note">
+      <span class="privacy-mark" aria-hidden="true">!</span>
+      <div><strong data-admin-i18n="privacyTitle">असली customer data न रखें</strong><p data-admin-i18n="privacyText">यह public demo page है, secure admin login नहीं। Requests केवल इस browser tab के sessionStorage में रहती हैं; server पर नहीं जातीं और दूसरे device पर नहीं दिखतीं। Live उपयोग से पहले authenticated backend और owner-only access लागू करना होगा।</p></div>
+    </aside>
+    <section class="admin-results" aria-labelledby="orders-title">
+      <div class="orders-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-admin-i18n="listEyebrow">इस browser/device का अस्थायी data</span></p><h2 id="orders-title"><span data-admin-i18n="ordersTitle">Requests</span> <span class="orders-count" id="orders-count">0</span></h2></div><a class="button button-outline" href="index.html#pickup-request" data-admin-i18n="newRequest">+ नई demo request</a></div>
+      <p class="empty-state" id="empty-state" data-admin-i18n="empty">अभी कोई demo request नहीं। Form में काल्पनिक details भरकर submit करें; फिर इसी tab में वापस आएँ।</p>
+      <p class="sr-only" id="admin-status" role="status" aria-live="polite"></p>
+      <div class="order-list" id="order-list" aria-live="polite"></div>
+    </section>
+    <footer class="admin-footer"><a href="index.html#top" data-admin-i18n="backHome">Banshree वेबसाइट पर वापस जाएँ</a><span data-admin-i18n="footerNote">इस view में real pickup records या login मौजूद नहीं हैं।</span></footer>
+  </main>
+  <script defer src="admin.js"></script>
+</body>
+</html>
